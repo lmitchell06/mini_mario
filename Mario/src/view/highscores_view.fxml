@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+		fx:controller="controller.HighscoresViewController"
+		alignment="center" spacing="10"
+		>
+
+		<Text styleClass="heading" text="Highscores"/>
+
+		<TableView items="${controller.world.highscores}">
+                    <columns>
+                        <TableColumn text="Name">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="name"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="scoreClm" text="Score"/>
+                    </columns>
+                </TableView>
+
+		<stylesheets>
+			<URL value="@style.css"/>
+		</stylesheets>
+</VBox>

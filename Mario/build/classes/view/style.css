@@ -1,0 +1,15 @@
+.stat {
+	-fx-font-size: 40px;
+}
+
+.heading {
+	-fx-font-size: 50px;
+	-fx-font-weight: bold;
+}
+
+.message {
+    -fx-font-size: 80px;
+    -fx-font-weight: bold;
+    -fx-fill: red;
+    -fx-stroke: black;
+}
